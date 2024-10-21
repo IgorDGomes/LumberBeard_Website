@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg {
+  background: url("../assets/Hero_Background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(.7) saturate(1.8);
+  background-attachment: fixed;
+}
+
+.partners-gradient {
+  background: linear-gradient(to top, #3E2723, #B97D5E, #E5D5C5);
+}
+
+.partners-text-gradient {
+  background: linear-gradient(to top, #3E2723, #B97D5E);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-us-bg {
+  background: url("../assets/about_us_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+
+.contact-bg {
+  background: url("../assets/contact_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loader {
+  width: 100px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: 
+    radial-gradient(farthest-side, #252524 94%,#0000) top/10px 10px no-repeat,
+    conic-gradient(#0000 30%, #252524);
+  mask: radial-gradient(farthest-side,#0000 calc(100% - 10px),#000 0);
+  animation: l13 1s infinite linear;
+}
+@keyframes l13{
+  100%{transform: rotate(1turn)}
+}
